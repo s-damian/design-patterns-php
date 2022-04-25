@@ -1,19 +1,18 @@
-# Dependency injection container (DIC) - Design Patterns - Exemple avec PHP 7
-
-
+# Dependency injection container (DIC) - Design Patterns - Example with PHP 8.1
 
 
 ## Description
 
-Dependency injection container veut dire "Conteneur d'injection de dépendances" en Français.
+### English description:
 
+The goal of this design pattern is to be able to resolve object dependencies simply.
+
+### Description française :
+
+Dependency injection container veut dire "Conteneur d'injection de dépendances" en Français.
 Le but de ce design pattern et d'être capable de résoudre les dépendances d'un objet simplement.
 
 
-
-
-
-
-### Voici un exemple du design pattern Dependency injection container en PHP 7
+### Here is an example of the dependency injection container design pattern in PHP 8.1
 
 * [Dependency injection container - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/dependency-injection-container/index.php)

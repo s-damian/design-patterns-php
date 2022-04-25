@@ -46,4 +46,4 @@ $container->setFactory('send_mail', function ($container) {
 
 
 // return Mailing\SendMail - Instance de "Mailing\SendMail" qui a "Mailing\Mailers\SwiftMailer" comme dépendance injectée
-var_dump($container->get('send_mail'));
+echo '<pre>'; var_dump($container->get('send_mail'));

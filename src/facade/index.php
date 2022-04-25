@@ -21,8 +21,8 @@ use Facades\Form as FormFacade;
 // Exemple sans Facade
 // return string - <form>
 $form = new Form();
-var_dump($form->open());
+echo '<pre>'; var_dump($form->open());
 
 // Exemple avec Facade
 // return string - <form>
-var_dump(FormFacade::open());
+echo '<pre>'; var_dump(FormFacade::open());

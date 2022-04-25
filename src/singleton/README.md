@@ -1,19 +1,21 @@
-# Singleton - Design Patterns - Exemple avec PHP 7
-
-
+# Singleton - Design Patterns - Example with PHP 8.1
 
 
 ## Description
+
+### English description:
+
+This design pattern allows to return only one instance of a class in an entire application.
+
+PS: We generally use this design pattern if several instances of a class will cause problems.
+
+### Description française :
 
 Ce design pattern permet de retourner qu'une seule instance d'une classe dans toute une application.
 
 PS : On utilise généralement ce design pattern si plusieurs instance d'un classe poserai problème(s).
 
 
-
-
-
-
-### Voici un exemple du design pattern singleton en PHP 7
+## Here is an example of the singleton design pattern in PHP 8.1
 
 * [Singleton - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/singleton/index.php)

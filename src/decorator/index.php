@@ -16,14 +16,14 @@ use Message\ArticleDecorators\ArticleEditDecorator;
 $article = new Article();
 
 // return string : 'Article 1 : '
-var_dump($article->getMessage());
+echo '<pre>'; var_dump($article->getMessage());
 
 $article = new ArticleAddDecorator($article);
 
 // return string : 'Article 1 : ajouté.'
-var_dump($article->getMessage());
+echo '<pre>'; var_dump($article->getMessage());
 
 $article = new ArticleEditDecorator($article);
 
 // return string : 'Article 1 :  ajouté. edité.'
-var_dump($article->getMessage());
+echo '<pre>'; var_dump($article->getMessage());

@@ -18,9 +18,9 @@ use Cars\CarFactory;
 
 $peugeot = CarFactory::create('peugeot');
 // return string - Nom du model instancié
-var_dump($peugeot->getName());
+echo '<pre>'; var_dump($peugeot->getName());
 
 
 $renault = CarFactory::create('renault');
 // return string - Nom du model instancié
-var_dump($renault->getName());
+echo '<pre>'; var_dump($renault->getName());

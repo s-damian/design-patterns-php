@@ -1,21 +1,13 @@
-# Design Patterns - Exemples avec PHP 7
+# Design Patterns - Exemples avec PHP 8.1
 
-Voici quelques exemples de design patterns en PHP 7.
-
-
-
-
+Here are some examples of design patterns in PHP 8.1.
 
 
 ## Auteur
 
-Auteur de cette exemple :
-[Développeur Freelance](https://www.devandweb.fr)
-[![Developpeur PHP](https://www.devandweb.fr/medias/app/website/developpeur-web.png)](https://www.devandweb.fr/freelance/developpeur-php)
-
-
-
-
+Author of these examples:
+[Freelance PHP](https://www.devandweb.fr)
+[![Freelance React JS](https://www.devandweb.fr/medias/app/website/developpeur-web.png)](https://www.devandweb.fr/freelance/developpeur-php)
 
 
 ## Design Patterns
@@ -41,21 +33,13 @@ Auteur de cette exemple :
 * [Singleton](https://github.com/dev-and-web/design-patterns-php/tree/master/src/singleton)
 
 
-
-
-
-
 ## Other Design Patterns
 
 * [MVC (Model-View-Controller)](https://github.com/dev-and-web/mvc-pattern-php)
 
 
+## Contributing
 
+### Bugs and Suggestions
 
-
-
-## Contribuer
-
-### Bugs et suggestions
-
-Si vous découvrez une erreur ou si vous avez une suggestion à me faire, merci de m'envoi un message.
+If you discover an error or if you have a suggestion for me, please send me a message.

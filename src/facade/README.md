@@ -1,19 +1,19 @@
-# Facade - Design Patterns - Exemple avec PHP 7
-
-
+# Facade - Design Patterns - Example with PHP 8.1
 
 
 ## Description
 
-Ce design pattern permet de cacher la complexité du code derrière un appel statique.
+### English description:
 
+This design pattern hides the complexity of the code behind a static call.
+PS: If you need several instances, you should not use this example.
+
+### Description française :
+
+Ce design pattern permet de cacher la complexité du code derrière un appel statique.
 PS : Si on a besoin de plusieurs instance, il ne faut pas utiliser cet exemple.
 
 
-
-
-
-
-### Voici un exemple du design pattern Facade en PHP 7
+## Here is an example of the facade design pattern in PHP 8.1
 
 * [Facade - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/facade/index.php)

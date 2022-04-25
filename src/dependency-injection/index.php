@@ -30,7 +30,7 @@ $swiftMailer = new SwiftMailer();
 
 $sendMail = new SendMail($swiftMailer);
 // return string - Retourne le message de confirmation de SwiftMailer
-var_dump($sendMail->sendMessage());
+echo '<pre>'; var_dump($sendMail->sendMessage());
 
 
 /**
@@ -42,4 +42,4 @@ $phpMailer = new PHPMailer();
 
 $sendMail = new SendMail($phpMailer);
 // return string - Retourne le message de confirmation de PHPMailer
-var_dump($sendMail->sendMessage());
+echo '<pre>'; var_dump($sendMail->sendMessage());

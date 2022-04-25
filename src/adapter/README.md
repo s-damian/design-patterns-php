@@ -1,4 +1,4 @@
-# Adapter - Design Patterns - Exemple avec PHP 7
+# Adapter - Design Patterns - Example with PHP 8.1
 
 
 
@@ -15,6 +15,6 @@ sans rien avoir à modifier dans l'application.
 
 
 
-### Voici un exemple du design pattern Adapter en PHP 7
+### Here is an example of the adapter design pattern in PHP 8.1
 
 * [Adapter - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/adapter/index.php)

@@ -5,7 +5,7 @@ namespace Routing;
 use Exception;
 
 /**
- * Gestion du Routing
+ * Routing management.
  */
 final class Router
 {
@@ -15,23 +15,23 @@ final class Router
     private static $instance;
 
     /**
-     * URI
+     * URI.
      *
      * @var string
      */
-    private $uri = '';
+    private string $uri = '';
 
     /**
      * Routes
      *
      * @var array
      */
-    private $routes = [];
+    private array$routes = [];
 
     /**
      * Router constructor.
      *
-     * On le met en private pour qu'on ne puis pas instancier le router autrement qu'avec un singleton
+     * We put it in private so that we cannot instantiate the router other than with a singleton.
      */
     private function __construct()
     {
@@ -39,7 +39,7 @@ final class Router
     }
 
     /**
-     * Singleton
+     * Singleton.
      *
      * @return Router
      */
@@ -53,7 +53,7 @@ final class Router
     }
 
     /**
-     * Setter de l'URI
+     * URI setter.
      */
     private function setUri()
     {
@@ -61,7 +61,7 @@ final class Router
     }
 
     /**
-     * Ajouter une route
+     * Add a route.
      *
      * @param string $path
      * @param string $action
@@ -72,7 +72,7 @@ final class Router
     }
 
     /**
-     * Executer le Routing
+     * Execute Routing.
      *
      * @return mixed
      */
@@ -88,7 +88,7 @@ final class Router
     }
 
     /**
-     * Executer l'action
+     * Execute action.
      *
      * @param string $action
      * @throws Exception
@@ -114,7 +114,7 @@ final class Router
     }
 
     /**
-     * Retourner une erreur 404
+     * Return a 404 error.
      *
      * @return mixed
      */
@@ -124,7 +124,7 @@ final class Router
     }
 
     /**
-     * Retourner toute les routes
+     * Return all routes.
      *
      * @return array
      */
