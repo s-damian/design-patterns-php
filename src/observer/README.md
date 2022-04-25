@@ -6,6 +6,7 @@
 ### English description:
 
 This design pattern makes it possible to send a signal to modules which play the role of observers.
+
 In case of notification of an object, the observers then carry out the appropriate action according to the information which arrives from the modules which they observe.
 
 ### Description française :
@@ -13,6 +14,7 @@ In case of notification of an object, the observers then carry out the appropria
 Observer veut dire "observateur" en Français.
 
 Ce design pattern permet d'envoyer un signal à des modules qui jouent le rôle d'observateurs.
+
 En cas de notification d'un objet, les observateurs effectuent alors l'action adéquate en fonction des informations qui parviennent depuis les modules qu'ils observent.
 
 

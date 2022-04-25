@@ -9,7 +9,7 @@ class SendMail
     /**
      * @var MailerInterface
      */
-    private $mailer;
+    private MailerInterface $mailer;
 
     /**
      *  @param MailerInterface $mailer

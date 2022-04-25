@@ -3,12 +3,12 @@
 namespace Facades;
 
 /**
- * Facade de la classe Form\Form
+ * Facade de la classe "\Form\Form".
  */
 final class Form extends Facade
 {
     /**
-     * @var Core\Form\Form
+     * @var \Form\Form
      */
     protected static $instance;
 

@@ -19,7 +19,7 @@ class SwiftMailer implements MailerInterface
      */
     public function confirmmationMessage(): string
     {
-        return 'The message has been sent with SwiftMailer';
+        return 'The message has been sent with SwiftMailer.';
     }
 
     /**
@@ -27,6 +27,6 @@ class SwiftMailer implements MailerInterface
      */
     public function errorMessage(): string
     {
-        return 'An error occurred with the attempt of sending of the message with SwiftMailer';
+        return 'An error occurred with the attempt of sending of the message with SwiftMailer.';
     }
 }

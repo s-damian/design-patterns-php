@@ -7,17 +7,17 @@ use File\Observers\ObserverInterface;
 class File
 {
     /**
-     * @param array - Les ObserverInterface
+     * @param array - Les ObserverInterface.
      */
-    private $observers = [];
+    private array $observers = [];
 
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /**
-     * Attacher un Observer
+     * Attacher un Observer.
      *
      * @param ObserverInterface $observer
      */
@@ -27,7 +27,7 @@ class File
     }
 
     /**
-     * Détacher un Observer
+     * Détacher un Observer.
      *
      * @param ObserverInterface $observer
      */
@@ -43,7 +43,7 @@ class File
     }
 
     /**
-     * Notifier les Observers
+     * Notifier les Observers.
      */
     public function notify()
     {
@@ -53,7 +53,7 @@ class File
     }
 
     /**
-     * Modifier le nom d'un fichier
+     * Modifier le nom d'un fichier.
      *
      * @param string $name
      */

@@ -9,7 +9,7 @@ use Cars\Models\Renault;
 class CarFactory
 {
     /**
-     * Factory
+     * Factory.
      *
      * @param string $model
      * @return mixed
@@ -19,13 +19,10 @@ class CarFactory
         switch (strtolower($model)) {
             case 'peugeot':
                 return new Peugeot();
-
             case 'renault':
                 return new Renault();
-            
             default:
                 throw new Exception('Model '.$model.' not exist.');
-                
                 break;
         }
     }

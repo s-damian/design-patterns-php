@@ -2,8 +2,6 @@
 
 namespace File\Observers;
 
-use File\FileInterface;
-
 interface ObserverInterface
 {
     /**

@@ -10,6 +10,7 @@ The goal of this design pattern is to be able to resolve object dependencies sim
 ### Description française :
 
 Dependency injection container veut dire "Conteneur d'injection de dépendances" en Français.
+
 Le but de ce design pattern et d'être capable de résoudre les dépendances d'un objet simplement.
 
 

@@ -12,15 +12,15 @@ use Cars\CarFactory;
 
 /**
  * Dans cette exemple,
- * grèace à la méthode "create" de la classe "Cars\CarFactory" on peux instancier les Models de Cars.
+ * gràce à la méthode "create" de la classe "\Cars\CarFactory" on peux instancier les Models de "Cars".
  */
 
 
 $peugeot = CarFactory::create('peugeot');
-// return string - Nom du model instancié
+// return string - Nom du model instancié.
 echo '<pre>'; var_dump($peugeot->getName());
 
 
 $renault = CarFactory::create('renault');
-// return string - Nom du model instancié
+// return string - Nom du model instancié.
 echo '<pre>'; var_dump($renault->getName());

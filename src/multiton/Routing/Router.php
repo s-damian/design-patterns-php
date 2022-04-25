@@ -5,33 +5,33 @@ namespace Routing;
 use Exception;
 
 /**
- * Gestion du Routing
+ * Gestion du Routing.
  */
 final class Router
 {
     /**
-     * @var array - Les différentes instances du Router
+     * @var array - Les différentes instances du Router.
      */
-    private static $instances = [];
+    private static array $instances = [];
 
     /**
-     * URI
+     * URI.
      *
      * @var string
      */
-    private $uri = '';
+    private string $uri = '';
 
     /**
-     * Routes
+     * Les Routes.
      *
      * @var array
      */
-    private $routes = [];
+    private array $routes = [];
 
     /**
      * Router constructor.
      *
-     * On le met en private pour qu'on ne puis pas instancier le router autrement qu'avec un Multiton
+     * On le met en private pour qu'on ne puis pas instancier le router autrement qu'avec un Multiton.
      */
     private function __construct()
     {
@@ -39,7 +39,7 @@ final class Router
     }
 
     /**
-     * Multiton
+     * Multiton.
      *
      * @param string $key
      * @return Router
@@ -54,7 +54,7 @@ final class Router
     }
 
     /**
-     * Setter de l'URI
+     * Setter de l'URI.
      */
     private function setUri()
     {
@@ -62,7 +62,7 @@ final class Router
     }
 
     /**
-     * Ajouter une route
+     * Ajouter une route.
      *
      * @param string $path
      * @param string $action
@@ -73,7 +73,7 @@ final class Router
     }
 
     /**
-     * Executer le Routing
+     * Executer le Routing.
      *
      * @return mixed
      */
@@ -89,7 +89,7 @@ final class Router
     }
 
     /**
-     * Executer l'action
+     * Executer l'action.
      *
      * @param string $action
      * @throws Exception
@@ -115,7 +115,7 @@ final class Router
     }
 
     /**
-     * Retourner une erreur 404
+     * Retourner une erreur 404.
      *
      * @return mixed
      */
@@ -125,7 +125,7 @@ final class Router
     }
 
     /**
-     * Retourner toute les routes
+     * Retourner toute les routes.
      *
      * @return array
      */

@@ -17,7 +17,7 @@ use Mailing\Adapters\PHPMailerAdapter;
 
 
 /**
- * Exemple avec SwiftMailer
+ * Exemple avec SwiftMailer.
  */
 $swiftMailer = new SwiftMailer();
 
@@ -32,7 +32,7 @@ if ($mailer->send()) {
 
 /**
  * Par exemple, si un jour on veut utiliser la librairie PHPMailer à la place de SwiftMailer,
- * on a juste à changer l'adapter et à lui passer en paramètredu constructeur l'instance de PHPMailer.
+ * on a juste à changer l'adapter et à lui passer en paramètre du constructeur l'instance de PHPMailer.
  * Et on aurra rtien d'autre à modifier dans toute notre application.
  */
 $phpMailer = new PHPMailer();
@@ -49,5 +49,5 @@ if ($mailer->send()) {
 /**
  * Et si un jour on souhaitera utiliser encore une autre librairie,
  * il suffira de lui créer un adapter qui implémentera l'AdapterInterface,
- * et de ensuite instancier cette adapter en lui passant en paramètre du constructeur l'instance de la librairie.
+ * et d'ensuite instancier cette adapter en lui passant en paramètre du constructeur l'instance de la librairie.
  */

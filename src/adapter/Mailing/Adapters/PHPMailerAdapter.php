@@ -9,7 +9,7 @@ class PHPMailerAdapter implements AdapterInterface
     /**
      * @var MailingInterface
      */
-    private $mailing;
+    private PHPMailer $mailing;
 
     /**
      * PHPMailerAdapter constructor.
@@ -22,9 +22,9 @@ class PHPMailerAdapter implements AdapterInterface
     }
 
     /**
-     * Essayer d'envoyer le mail
+     * Essayer d'envoyer le mail.
      *
-     * @return bool - True si le mail est bien parti
+     * @return bool - True si le mail est bien parti.
      */
     public function send(): bool
     {

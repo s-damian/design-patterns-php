@@ -9,7 +9,7 @@ class ArticleEditDecorator implements ArticleInterface
     /**
      * ArticleInterface
      */
-    private $article;
+    private ArticleInterface $article;
 
     /**
      * ArticleEditDecorator constructor.
