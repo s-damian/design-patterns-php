@@ -10,11 +10,8 @@ class CarFactory
 {
     /**
      * Factory.
-     *
-     * @param string $model
-     * @return mixed
      */
-    public static function create(string $model)
+    public static function create(string $model): object
     {
         switch (strtolower($model)) {
             case 'peugeot':

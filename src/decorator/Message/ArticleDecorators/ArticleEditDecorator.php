@@ -19,11 +19,8 @@ class ArticleEditDecorator implements ArticleInterface
         $this->article = $article;
     }
 
-    /**
-     * @return string
-     */
     public function getMessage(): string
     {
-        return $this->article->getMessage().' edité.';
+        return $this->article->getMessage().' edited.';
     }
 }

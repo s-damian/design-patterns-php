@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Facade
+ * Facade.
  */
 
 require_once 'Form/Form.php';
@@ -12,17 +12,17 @@ use Form\Form;
 use Facades\Form as FormFacade;
 
 /**
- * Dans cette exemple,
- * que ce soit en instanciant directement la classe "\Form\Form" et en appelant ensuite la méthode "open",
- * ou en fesant un appel statique avec la Facade "\Facades\Form",
- * nous obtenons le même résultat.
+ * In this example,
+ * either by directly instantiating the "\Form\Form" class and then calling the "open" method,
+ * or by making a static call with the Facade "\Facades\Form",
+ * we get the same result.
  */
 
-// Exemple sans Facade.
+// Example without Facade.
 // return string - <form>
 $form = new Form();
 echo '<pre>'; var_dump($form->open());
 
-// Exemple avec Facade.
+// Example with Facade.
 // return string - <form>
 echo '<pre>'; var_dump(FormFacade::open());

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Dependency injection
+ * Dependency injection.
  */
 
 require_once 'Mailing/Contracts/Mailers/MailerInterface.php';
@@ -14,32 +14,32 @@ use Mailing\Mailers\SwiftMailer;
 use Mailing\Mailers\PHPMailer;
 
 /**
- * Dans cette exemple, les Mailers "\Mailing\Mailers\SwiftMailer" et "\Mailing\Mailers\PHPMailer" implémentents
- * l'interface/contrat "\Mailing\Contracts\Mailier\FormatterInterface".
+ * In this example, Mailers "\Mailing\Mailers\SwiftMailer" and "\Mailing\Mailers\PHPMailer" implement the
+ * interface/contract "\Mailing\Contracts\Mailier\FormatterInterface".
  *
- * La classe "\Mailing\SendMail" attend en dépendance dans son constructeur une classe qui
- * implémente l'interface/contrat "\Mailing\Contracts\Mailier\FormatterInterface".
+ * The class "\Mailing\SendMail" expects as a dependency in its constructor a class that implements the
+ * interface/contract "\Mailing\Contracts\Mailier\FormatterInterface".
  *
- * Et on peut ensuite envoier le message avec la méthode "sendMessage" de la classe "\Mailing\SendMail".
+ * And we can then send the message with the "sendMessage" method of the class "\Mailing\SendMail".
  *
- * Dans cette exemple on constate donc qu'on remplacer la dépendance injectée dans le constructeur de "\Mailing\SendMail".
+ * In this example, we see that we can replace the dependency injected into the constructor of "\Mailing\SendMail".
  */
 
 
 $swiftMailer = new SwiftMailer();
 
 $sendMail = new SendMail($swiftMailer);
-// return string - Retourne le message de confirmation de SwiftMailer.
+// return string - Returns the confirmation message of SwiftMailer.
 echo '<pre>'; var_dump($sendMail->sendMessage());
 
 
 /**
- * On peut donc remplacer la dépendance injectée "\Mailing\Mailers\SwiftMailer" par "\Mailing\Mailers\PHPMailer".
+ * So we can replace the injected dependency "\Mailing\Mailers\SwiftMailer" by "\Mailing\Mailers\PHPMailer".
  */
 
 
 $phpMailer = new PHPMailer();
 
 $sendMail = new SendMail($phpMailer);
-// return string - Retourne le message de confirmation de PHPMailer.
+// return string - Returns the confirmation message of PHPMailer.
 echo '<pre>'; var_dump($sendMail->sendMessage());

@@ -6,22 +6,13 @@ use Mailing\Contracts\Mailers\MailerInterface;
 
 class SendMail
 {
-    /**
-     * @var MailerInterface
-     */
     private MailerInterface $mailer;
 
-    /**
-     *  @param MailerInterface $mailer
-     */
     public function __construct(MailerInterface $mailer)
     {
         $this->mailer = $mailer;
     }
 
-    /**
-     * @return string
-     */
     public function sendMessage(): string
     {
         if ($this->mailer->send()) {

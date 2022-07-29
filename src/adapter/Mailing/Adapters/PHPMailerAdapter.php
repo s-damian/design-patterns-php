@@ -13,8 +13,6 @@ class PHPMailerAdapter implements AdapterInterface
 
     /**
      * PHPMailerAdapter constructor.
-     *
-     * @param PHPMailer
      */
     public function __construct(PHPMailer $mailing)
     {
@@ -22,26 +20,20 @@ class PHPMailerAdapter implements AdapterInterface
     }
 
     /**
-     * Essayer d'envoyer le mail.
+     * Try to send the email.
      *
-     * @return bool - True si le mail est bien parti.
+     * @return bool - True if the email is sent successfully.
      */
     public function send(): bool
     {
         return $this->mailing->sendMessage();
     }
 
-    /**
-     * @return string
-     */
     public function getConfirmmation(): string
     {
         return $this->mailing->responseConfirmmationMessage();
     }
 
-    /**
-     * @return string
-     */
     public function getError(): string
     {
         return $this->mailing->responseErrorMessage();

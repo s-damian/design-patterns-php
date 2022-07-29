@@ -4,10 +4,7 @@ namespace File\Observers;
 
 class ImageObserver implements ObserverInterface
 {
-    /**
-     * @param string $fileName
-     */
-    public function update(string $fileName)
+    public function update(string $fileName): void
     {
         echo '<p>L\'image a été renommé "'.$fileName.'"</p>';
     }

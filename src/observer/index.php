@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Observer
+ * Observer.
  */
 
 require_once 'File/Observers/ObserverInterface.php';
@@ -16,22 +16,22 @@ use File\Observers\ImageObserver;
 use File\Observers\VideoObserver;
 
 
-// On instancie les Observers.
+// We instantiate the Observers.
 $audioObserver = new AudioObserver();
 $imageObserver = new ImageObserver();
 $videoObserver = new VideoObserver();
 
-// On instancie un fichier.
+// We instantiate a file.
 $file = new File();
 
-// On attache des Observers au fichier.
+// Observers are attached to the file.
 $file->attach($audioObserver);
 $file->attach($imageObserver);
 $file->attach($videoObserver);
 
-// On détache un Observer du fichier.
+// We detach an Observer from the file.
 $file->dettach($audioObserver);
 
-// On modifie le nom du fichier.
-// Ceci va automatiquement notifier les Observers attachés au fichier.
+// We change the name of the file.
+// This will automatically notify Observers attached to the file.
 $file->setName('Fichier 1');

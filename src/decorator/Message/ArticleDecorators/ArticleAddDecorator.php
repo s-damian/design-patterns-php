@@ -19,11 +19,8 @@ class ArticleAddDecorator implements ArticleInterface
         $this->article = $article;
     }
 
-    /**
-     * @return string
-     */
     public function getMessage(): string
     {
-        return $this->article->getMessage().' ajouté.';
+        return $this->article->getMessage().' added.';
     }
 }

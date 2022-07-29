@@ -5,33 +5,29 @@ namespace Routing;
 use Exception;
 
 /**
- * Gestion du Routing.
+ * Routing management.
  */
 final class Router
 {
     /**
-     * @var array - Les différentes instances du Router.
+     * @var array - The different instances of the Router.
      */
     private static array $instances = [];
 
     /**
      * URI.
-     *
-     * @var string
      */
     private string $uri = '';
 
     /**
-     * Les Routes.
-     *
-     * @var array
+     * Routes.
      */
     private array $routes = [];
 
     /**
      * Router constructor.
      *
-     * On le met en private pour qu'on ne puis pas instancier le router autrement qu'avec un Multiton.
+     * We put it in private so that we can't instantiate the router other than with a Multiton.
      */
     private function __construct()
     {
@@ -40,9 +36,6 @@ final class Router
 
     /**
      * Multiton.
-     *
-     * @param string $key
-     * @return Router
      */
     public static function getInstance(string $key): self
     {
@@ -54,30 +47,25 @@ final class Router
     }
 
     /**
-     * Setter de l'URI.
+     * Setter of the URI.
      */
-    private function setUri()
+    private function setUri(): void
     {
         $this->uri = $_SERVER['REQUEST_URI'];
     }
 
     /**
-     * Ajouter une route.
-     *
-     * @param string $path
-     * @param string $action
+     * Add a route.
      */
-    public function add(string $path, string $action)
+    public function add(string $path, string $action): void
     {
         $this->routes[$path] = $action;
     }
 
     /**
-     * Executer le Routing.
-     *
-     * @return mixed
+     * Execute the Routing.
      */
-    public function run()
+    public function run(): mixed
     {
         foreach ($this->routes as $path => $action) {
             if ($this->uri == $path) {
@@ -89,13 +77,11 @@ final class Router
     }
 
     /**
-     * Executer l'action.
+     * Execute the action.
      *
-     * @param string $action
      * @throws Exception
-     * @return mixed
      */
-    private function executeAction(string $action)
+    private function executeAction(string $action): mixed
     {
         list($controller, $method) = explode('@', $action);
 
@@ -115,19 +101,17 @@ final class Router
     }
 
     /**
-     * Retourner une erreur 404.
+     * Return a 404 error.
      *
      * @return mixed
      */
-    private function executeError404()
+    private function executeError404(): never
     {
         die('404 Error');
     }
 
     /**
-     * Retourner toute les routes.
-     *
-     * @return array
+     * Return all routes.
      */
     public function getRoutes(): array
     {

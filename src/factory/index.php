@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Facory
+ * Facory.
  */
 
 require_once 'Cars/CarFactory.php';
@@ -11,16 +11,16 @@ require_once 'Cars/Models/Renault.php';
 use Cars\CarFactory;
 
 /**
- * Dans cette exemple,
- * gràce à la méthode "create" de la classe "\Cars\CarFactory" on peux instancier les Models de "Cars".
+ * In this example,
+ * Thanks to the "create" method of the "\Cars\CarFactory" class, we can instantiate the Models of "Cars".
  */
 
 
 $peugeot = CarFactory::create('peugeot');
-// return string - Nom du model instancié.
+// return string - Name of the instantiated model.
 echo '<pre>'; var_dump($peugeot->getName());
 
 
 $renault = CarFactory::create('renault');
-// return string - Nom du model instancié.
+// return string - Name of the instantiated model.
 echo '<pre>'; var_dump($renault->getName());

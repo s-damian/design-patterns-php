@@ -4,11 +4,8 @@ namespace Message;
 
 class Article implements ArticleInterface
 {
-    /**
-     * @return string
-     */
     public function getMessage(): string
     {
-        return 'Article 1 :';
+        return 'Article 1:';
     }
 }

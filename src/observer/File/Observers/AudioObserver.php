@@ -4,10 +4,7 @@ namespace File\Observers;
 
 class AudioObserver implements ObserverInterface
 {
-    /**
-     * @param string $fileName
-     */
-    public function update(string $fileName)
+    public function update(string $fileName): void
     {
         echo '<p>L\'audio a été renommé "'.$fileName.'"</p>';
     }

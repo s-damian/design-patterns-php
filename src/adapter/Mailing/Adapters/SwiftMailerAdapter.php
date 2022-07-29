@@ -22,26 +22,20 @@ class SwiftMailerAdapter implements AdapterInterface
     }
 
     /**
-     * Essayer d'envoyer le mail.
+     * Try to send the email.
      *
-     * @return bool - True si le mail est bien parti.
+     * @return bool - True if the email is sent successfully.
      */
     public function send(): bool
     {
         return $this->mailing->messageIsSend();
     }
 
-    /**
-     * @return string
-     */
     public function getConfirmmation(): string
     {
         return $this->mailing->confirmmationMessage();
     }
 
-    /**
-     * @return string
-     */
     public function getError(): string
     {
         return $this->mailing->errorMessage();

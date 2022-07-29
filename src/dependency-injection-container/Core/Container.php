@@ -10,54 +10,47 @@ use Exception;
 class Container
 {
     /**
-     * @var array - Pour enregistrer les valeurs.
+     * @var array - To save the values.
      */
     private array $registry = [];
 
     /**
-     * @var array - Pour enregistrer les instances (pour toujours la même instance).
+     * @var array - To save instances (forever the same instance).
      */
     private array $instances = [];
 
     /**
-     * @var array - Pour enregistrer les instances (pour à chaque fois une nouvelle instance).
+     * @var array - To save instances (for each time a new instance).
      */
     private array $factories = [];
 
     /**
-     * Servira à retourner toujours la même instance.
-     *
-     * @param string $key
-     * @param callable $callable
+     * Will be used to always return the same instance.
      */
-    public function set(string $key, callable $callable)
+    public function set(string $key, callable $callable): void
     {
         $this->registry[$key] = $callable;
     }
 
     /**
-     * Servira à retourner à chaque fois une nouvelle instance.
-     *
-     * @param string $key
-     * @param callable $callable
+     * Will be used to return a new instance each time.
      */
-    public function setFactory(string $key, callable $callable)
+    public function setFactory(string $key, callable $callable): void
     {
         $this->factories[$key] = $callable;
     }
 
     /**
-     * @param string $key
-     * @return mixed - Une instance.
+     * @return object - An instance.
      */
-    public function get(string $key)
+    public function get(string $key): object
     {
-        // Pour si on appelle à chaque fois une nouvelle instance.
+        // For if a new instance is called each time.
         if (isset($this->factories[$key])) {
             return $this->factories[$key]($this);
         }
 
-        // Pour si on appelle toujours la même instance.
+        // For if we always call the same instance.
         if (!isset($this->instances[$key])) {
             if (!isset($this->registry[$key])) throw new Exception('Instance '.$key.' not exist.');
 

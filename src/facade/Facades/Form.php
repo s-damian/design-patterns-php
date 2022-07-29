@@ -3,7 +3,7 @@
 namespace Facades;
 
 /**
- * Facade de la classe "\Form\Form".
+ * Facade of the "\Form\Form" class.
  */
 final class Form extends Facade
 {
@@ -12,10 +12,7 @@ final class Form extends Facade
      */
     protected static $instance;
 
-    /**
-     * @return string
-     */
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return 'Form\Form';
     }

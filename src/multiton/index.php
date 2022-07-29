@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Multiton
+ * Multiton.
  */
 
 require_once 'Routing/Router.php';
@@ -9,33 +9,33 @@ require_once 'Routing/Router.php';
 use Routing\Router;
 
 
-// On appelle une instance du Router.
+// We call an instance of the Router.
 $router = Router::getInstance('instance_web');
 
 $router->add('page1', 'page@get1');
 $router->add('page2', 'page@get2');
 
-// return array - Retourne bien les 2 routes.
+// return array - Returns 2 routes well.
 echo '<pre>'; var_dump($router->getRoutes());
 
 
-// On appelle de nouveau l'instance du Router (retournera la même instance que la 1ère appelle d'instance du Router).
+// The Router instance is called again (will return the same instance as the 1st Router instance call).
 $router2 = Router::getInstance('instance_web');
 $router2->add('page3', 'page@get3');
 
-// return array - Retourne bien les 3 routes.
+// return array -Returns the 3 routes well.
 echo '<pre>'; var_dump($router->getRoutes());
 
-// return array - Retourne bien les 3 routes.
+// return array -Returns the 3 routes well.
 echo '<pre>'; var_dump($router2->getRoutes());
 
 
-// On appelle une nouvelle instance du Router (retournera une nouvelle instance).
+// A new instance of the Router is called (will return a new instance).
 $router3 = Router::getInstance('instance_api');
 $router3->add('page3', 'page@get3');
 
-// return array - Retourne bien que les 3 routes de 'instance_web'. La route de 'instance_api' n'a donc pas été prise en compte.
+// return array - Returns only the 3 routes of 'instance_web'. The 'instance_api' route was therefore not taken into account.
 echo '<pre>'; var_dump($router->getRoutes());
 
-// return array - Retourne bien qu'une seule router (la route de 'instance_api').
+// return array - Returns only one router (the 'instance_api' route).
 echo '<pre>'; var_dump($router3->getRoutes());

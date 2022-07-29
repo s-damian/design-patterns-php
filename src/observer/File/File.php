@@ -7,31 +7,24 @@ use File\Observers\ObserverInterface;
 class File
 {
     /**
-     * @param array - Les ObserverInterface.
+     * @param array - The ObserverInterface.
      */
     private array $observers = [];
 
-    /**
-     * @var string
-     */
     private string $name;
 
     /**
-     * Attacher un Observer.
-     *
-     * @param ObserverInterface $observer
+     * Attach an Observer.
      */
-    public function attach(ObserverInterface $observer)
+    public function attach(ObserverInterface $observer): void
     {
         $this->observers[] = $observer;
     }
 
     /**
-     * Détacher un Observer.
-     *
-     * @param ObserverInterface $observer
+     * Detach an Observer.
      */
-    public function dettach(ObserverInterface $observer)
+    public function dettach(ObserverInterface $observer): void
     {
         foreach ($this->observers as $key => $obs) {
             if ($obs === $observer) {
@@ -43,9 +36,9 @@ class File
     }
 
     /**
-     * Notifier les Observers.
+     * Notify Observers.
      */
-    public function notify()
+    public function notify(): void
     {
         foreach ($this->observers as $observer) {
             $observer->update($this->name);
@@ -53,11 +46,9 @@ class File
     }
 
     /**
-     * Modifier le nom d'un fichier.
-     *
-     * @param string $name
+     * Change the name of a file.
      */
-    public function setName(string $name)
+    public function setName(string $name): void
     {
         $this->name = $name;
 

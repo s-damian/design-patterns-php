@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Active record
+ * Active record.
  */
 
 require_once 'Models/Article.php';
@@ -10,8 +10,7 @@ use Models\Article;
 
 
 /**
- * Dans cette exemple, on ajoute un nouvelle Article.
- * On fait donc une requête SQL INSERT INTO...
+ * In this example, we add a new article.
  */
 $article = new Article();
 $article->title = 'Titre 1';
@@ -22,9 +21,7 @@ $article->save();
 
 
 /**
- * Dans cette exemple, on modifie un Article (celui qui a l'id 12).
- * On fait donc une requête SQL SELECT... pour récupérer l'article,
- * et on fait ensuite une requête SQL UPDATE...
+ * In this example, we modify an article (the one with id 12).
  */
 $article = Article::load()->find(12);
 $article->title = 'Titre 2';

@@ -16,17 +16,13 @@ final class Router
 
     /**
      * URI.
-     *
-     * @var string
      */
     private string $uri = '';
 
     /**
-     * Routes
-     *
-     * @var array
+     * Routes.
      */
-    private array$routes = [];
+    private array $routes = [];
 
     /**
      * Router constructor.
@@ -40,8 +36,6 @@ final class Router
 
     /**
      * Singleton.
-     *
-     * @return Router
      */
     public static function getInstance(): self
     {
@@ -55,28 +49,23 @@ final class Router
     /**
      * URI setter.
      */
-    private function setUri()
+    private function setUri(): void
     {
         $this->uri = $_SERVER['REQUEST_URI'];
     }
 
     /**
      * Add a route.
-     *
-     * @param string $path
-     * @param string $action
      */
-    public function add(string $path, string $action)
+    public function add(string $path, string $action): void
     {
         $this->routes[$path] = $action;
     }
 
     /**
      * Execute Routing.
-     *
-     * @return mixed
      */
-    public function run()
+    public function run(): mixed
     {
         foreach ($this->routes as $path => $action) {
             if ($this->uri == $path) {
@@ -90,11 +79,9 @@ final class Router
     /**
      * Execute action.
      *
-     * @param string $action
      * @throws Exception
-     * @return mixed
      */
-    private function executeAction(string $action)
+    private function executeAction(string $action): mixed
     {
         list($controller, $method) = explode('@', $action);
 
@@ -115,18 +102,14 @@ final class Router
 
     /**
      * Return a 404 error.
-     *
-     * @return mixed
      */
-    private function executeError404()
+    private function executeError404(): never
     {
         die('404 Error');
     }
 
     /**
      * Return all routes.
-     *
-     * @return array
      */
     public function getRoutes(): array
     {

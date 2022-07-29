@@ -3,7 +3,7 @@
 namespace Facades;
 
 /**
- * Classe parent de toute les Façades (où on veut qu'une seule instance dans toute l'application).
+ * Parent class of all Facades (where we want only one instance in the whole application).
  */
 abstract class Facade
 {
@@ -13,11 +13,10 @@ abstract class Facade
     abstract protected static function getFacadeAccessor();
     
     /**
-     * @param string $method - Nom de la méthode à appeler.
-     * @param array $arguments - Paramètres dans méthodes.
-     * @return mixed
+     * @param string $method - Name of the method to call.
+     * @param array $arguments - Parameters in the method.
      */
-    final public static function __callStatic(string $method, array $arguments)
+    final public static function __callStatic(string $method, array $arguments): mixed
     {
         if (static::$instance === null) {            
             static::$instance = self::getFacadeInstace();
@@ -26,10 +25,7 @@ abstract class Facade
         return static::$instance->$method(...$arguments);
     }
 
-    /**
-     * @return mixed
-     */
-    private static function getFacadeInstace()
+    private static function getFacadeInstace(): object
     {
         $class = static::getFacadeAccessor();
         

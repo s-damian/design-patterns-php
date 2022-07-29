@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Adapter
+ * Adapter.
  */
 
 require_once 'Mailing/Adapters/AdapterInterface.php';
@@ -17,7 +17,7 @@ use Mailing\Adapters\PHPMailerAdapter;
 
 
 /**
- * Exemple avec SwiftMailer.
+ * Example with SwiftMailer.
  */
 $swiftMailer = new SwiftMailer();
 
@@ -31,9 +31,9 @@ if ($mailer->send()) {
 
 
 /**
- * Par exemple, si un jour on veut utiliser la librairie PHPMailer à la place de SwiftMailer,
- * on a juste à changer l'adapter et à lui passer en paramètre du constructeur l'instance de PHPMailer.
- * Et on aurra rtien d'autre à modifier dans toute notre application.
+ * For example, if one day we want to use the PHPMailer library instead of SwiftMailer,
+ * we will just have to change the adapter and pass it the instance of PHPMailer as a constructor parameter.
+ * And we will have nothing else to modify in our entire application.
  */
 $phpMailer = new PHPMailer();
 
@@ -47,7 +47,7 @@ if ($mailer->send()) {
 
 
 /**
- * Et si un jour on souhaitera utiliser encore une autre librairie,
- * il suffira de lui créer un adapter qui implémentera l'AdapterInterface,
- * et d'ensuite instancier cette adapter en lui passant en paramètre du constructeur l'instance de la librairie.
+ * And if one day we want to use yet another library,
+ * it will suffice to create an adapter for it which will implement the AdapterInterface,
+ * and then instantiate this adapter by passing it the instance of the library as a constructor parameter.
  */

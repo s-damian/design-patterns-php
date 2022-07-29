@@ -12,32 +12,24 @@ class Article
     public $id;
 
     /**
-     * Type varchar(255)
-     *
-     * @var string
+     * Type varchar(255).
      */
-    public $title;
+    public string $title;
 
     /**
-     * Type varchar(255)
-     *
-     * @var string
+     * Type varchar(255).
      */
-    public $description;
+    public string $description;
 
     /**
-     * Type longtext
-     *
-     * @var string
+     * Type longtext.
      */
-    public $content;
+    public string $content;
 
     /**
-     * Type varchar(255) - Index unique
-     *
-     * @var string
+     * Type varchar(255) - Index unique.
      */
-    public $slug;
+    public string $slug;
 
     /**
      * @return self
@@ -61,9 +53,9 @@ class Article
     }
 
     /**
-     * Enregistrer un article - Ajouter (INSERT) ou Modifier (UPDATE)
+     * Save an article - Add (INSERT) or modify (UPDATE).
      */
-    public function save()
+    public function save(): void
     {
         if ($this->id !== null) {
             // UPDATE articles SET title = ?, description = ?, content = ?, slug = ? WHERE id = ?...

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Singleton
+ * Singleton.
  */
 
 require_once 'Routing/Router.php';
