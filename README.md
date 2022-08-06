@@ -7,7 +7,7 @@ Here are some examples of design patterns in PHP 8.1.
 
 Author of these examples:
 [Freelance PHP](https://www.devandweb.fr)
-[![Freelance React JS](https://www.devandweb.fr/medias/app/website/developpeur-web.png)](https://www.devandweb.fr/freelance/developpeur-php)
+[![Freelance React JS](https://raw.githubusercontent.com/dev-and-web/medias/main/daw-freelance-developer.png)](https://www.devandweb.fr/freelance/developpeur-php)
 
 
 ## Design Patterns
