@@ -1,0 +1,25 @@
+{
+    "name": "s-damian/mvc",
+    "description": "PHP MVC example",
+    "keywords": ["php","mvc","design","pattern","example"],
+    "require": {
+        "php": "^8.1"
+    },
+    "authors": [
+        {
+            "name": "Stephen Damian",
+            "email": "contact@devandweb.fr",
+            "homepage": "https://www.devandweb.fr",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "core/Support/helpers.php"
+        ],
+    	"psr-4" : {
+            "App\\": "app/",
+            "Core\\": "core/"
+        }
+    }
+}

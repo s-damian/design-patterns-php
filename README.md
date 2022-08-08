@@ -7,35 +7,35 @@ Here are some examples of design patterns in PHP 8.1.
 
 Author of these examples:
 [Freelance PHP](https://www.devandweb.fr)
-[![Freelance React JS](https://raw.githubusercontent.com/dev-and-web/medias/main/daw-freelance-developer.png)](https://www.devandweb.fr/freelance/developpeur-php)
+[![Freelance React JS](https://raw.githubusercontent.com/s-damian/medias/main/daw-freelance-developer.png)](https://www.devandweb.fr/freelance/developpeur-php)
 
 
 ## Design Patterns
 
-* [Active record](https://github.com/dev-and-web/design-patterns-php/tree/master/src/active-record)
+* [Active record](https://github.com/s-damian/design-patterns-php/tree/master/src/active-record)
 
-* [Adapter](https://github.com/dev-and-web/design-patterns-php/tree/master/src/adapter)
+* [Adapter](https://github.com/s-damian/design-patterns-php/tree/master/src/adapter)
 
-* [Decorator](https://github.com/dev-and-web/design-patterns-php/tree/master/src/decorator)
+* [Decorator](https://github.com/s-damian/design-patterns-php/tree/master/src/decorator)
 
-* [Dependency injection](https://github.com/dev-and-web/design-patterns-php/tree/master/src/dependency-injection)
+* [Dependency injection](https://github.com/s-damian/design-patterns-php/tree/master/src/dependency-injection)
 
-* [Dependency injection container (DIC)](https://github.com/dev-and-web/design-patterns-php/tree/master/src/dependency-injection-container)
+* [Dependency injection container (DIC)](https://github.com/s-damian/design-patterns-php/tree/master/src/dependency-injection-container)
 
-* [Facade](https://github.com/dev-and-web/design-patterns-php/tree/master/src/facade)
+* [Facade](https://github.com/s-damian/design-patterns-php/tree/master/src/facade)
 
-* [Factory](https://github.com/dev-and-web/design-patterns-php/tree/master/src/factory)
+* [Factory](https://github.com/s-damian/design-patterns-php/tree/master/src/factory)
 
-* [Multiton](https://github.com/dev-and-web/design-patterns-php/tree/master/src/multiton)
+* [Multiton](https://github.com/s-damian/design-patterns-php/tree/master/src/multiton)
 
-* [Observer](https://github.com/dev-and-web/design-patterns-php/tree/master/src/observer)
+* [Observer](https://github.com/s-damian/design-patterns-php/tree/master/src/observer)
 
-* [Singleton](https://github.com/dev-and-web/design-patterns-php/tree/master/src/singleton)
+* [Singleton](https://github.com/s-damian/design-patterns-php/tree/master/src/singleton)
 
 
 ## Other Design Patterns
 
-* [MVC (Model-View-Controller)](https://github.com/dev-and-web/mvc-pattern-php)
+* [MVC (Model-View-Controller)](https://github.com/s-damian/mvc-pattern-php)
 
 
 ## Contributing

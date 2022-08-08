@@ -1,0 +1,3 @@
+<section>
+	Homepage content
+</section>

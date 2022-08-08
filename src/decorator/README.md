@@ -19,4 +19,4 @@ Ce design pattern permet d'ajouter des méthodes pour modifier le comportement d
 
 ## Here is an example of the decorator design pattern in PHP 8.1
 
-* [Decorator - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/decorator/index.php)
+* [Decorator - Source](https://github.com/s-damian/design-patterns-php/blob/master/src/decorator/index.php)

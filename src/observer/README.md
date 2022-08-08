@@ -20,4 +20,4 @@ En cas de notification d'un objet, les observateurs effectuent alors l'action ad
 
 ## Here is an example of the observer design pattern in PHP 8.1
 
-* [Observer - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/observer/index.php)
+* [Observer - Source](https://github.com/s-damian/design-patterns-php/blob/master/src/observer/index.php)

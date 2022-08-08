@@ -22,4 +22,4 @@ Le but est de faire en sorte que si un jour on a à changer de librairie, qu'on 
 
 ## Here is an example of the adapter design pattern in PHP 8.1
 
-* [Adapter - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/adapter/index.php)
+* [Adapter - Source](https://github.com/s-damian/design-patterns-php/blob/master/src/adapter/index.php)

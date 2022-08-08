@@ -18,4 +18,4 @@ PS : Si on a besoin de plusieurs instance, il ne faut pas utiliser cet exemple.
 
 ## Here is an example of the facade design pattern in PHP 8.1
 
-* [Facade - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/facade/index.php)
+* [Facade - Source](https://github.com/s-damian/design-patterns-php/blob/master/src/facade/index.php)

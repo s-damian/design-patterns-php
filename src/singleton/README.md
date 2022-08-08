@@ -18,4 +18,4 @@ PS : On utilise généralement ce design pattern si plusieurs instance d'un clas
 
 ## Here is an example of the singleton design pattern in PHP 8.1
 
-* [Singleton - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/singleton/index.php)
+* [Singleton - Source](https://github.com/s-damian/design-patterns-php/blob/master/src/singleton/index.php)

@@ -18,4 +18,4 @@ Ce design pattern ressemble au design pattern "Singleton".
 
 ## Here is an example of the multiton design pattern in PHP 8.1
 
-* [Multiton - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/multiton/index.php)
+* [Multiton - Source](https://github.com/s-damian/design-patterns-php/blob/master/src/multiton/index.php)

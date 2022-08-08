@@ -18,4 +18,4 @@ La classe exacte de l'objet n'est donc pas connue par l'appelant.
 
 ## Here is an example of the factory design pattern in PHP 8.1
 
-* [Factory - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/factory/index.php)
+* [Factory - Source](https://github.com/s-damian/design-patterns-php/blob/master/src/factory/index.php)

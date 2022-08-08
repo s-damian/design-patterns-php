@@ -1,0 +1,20 @@
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+    # Pour que si on tape index, que hebergeur n'essaye pas d'aller vers index.php ou index.html
+    Options -Multiviews
+
+    # Activation de l'url rewitting
+    RewriteEngine on
+
+    # Front controller
+    # verifier que url saisi est ni un dossier, ni un fichier qui existe physiquement, ni un lien symbolique ...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-l
+    # ... si url saisi n'existe pas physiquement, on peut faire la ré-écriture
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+# Désactiver le listing des dossier "index of" qui n'ont pas de fichier index.php
+Options -Indexes

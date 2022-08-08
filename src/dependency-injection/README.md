@@ -24,4 +24,4 @@ L'injection de dépendances nous permet d'injecter uniquement les dépendances d
 
 ## Here is an example of the dependency injection design pattern in PHP 8.1
 
-* [Dependency injection - Source](https://github.com/dev-and-web/design-patterns-php/blob/master/src/dependency-injection/index.php)
+* [Dependency injection - Source](https://github.com/s-damian/design-patterns-php/blob/master/src/dependency-injection/index.php)
