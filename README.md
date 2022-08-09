@@ -26,16 +26,13 @@ Author of these examples:
 
 * [Factory](https://github.com/s-damian/design-patterns-php/tree/master/src/factory)
 
+* [MVC (Model-View-Controller)](https://github.com/s-damian/design-patterns-php/tree/master/src/mvc-pattern-php)
+
 * [Multiton](https://github.com/s-damian/design-patterns-php/tree/master/src/multiton)
 
 * [Observer](https://github.com/s-damian/design-patterns-php/tree/master/src/observer)
 
 * [Singleton](https://github.com/s-damian/design-patterns-php/tree/master/src/singleton)
-
-
-## Other Design Patterns
-
-* [MVC (Model-View-Controller)](https://github.com/s-damian/mvc-pattern-php)
 
 
 ## Contributing
