@@ -3,9 +3,7 @@
 
 ### Author
 
-Author of this example:
-[Freelance PHP](https://www.devandweb.fr)
-[![Freelance Laravel](https://raw.githubusercontent.com/s-damian/medias/main/daw-freelance-developer.png)](https://www.devandweb.fr)
+[![Freelance Developer](https://raw.githubusercontent.com/s-damian/medias/main/s-damian-logo.webp)](https://github.com/s-damian)
 
 
 ## English Documentation:
