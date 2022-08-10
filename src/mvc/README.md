@@ -1,17 +1,11 @@
 # MVC pattern (Model-View-Controller) - Example - PHP 8.1
 
 
-
-
 ### Author
 
 Author of this example:
 [Freelance PHP](https://www.devandweb.fr)
 [![Freelance Laravel](https://raw.githubusercontent.com/s-damian/medias/main/daw-freelance-developer.png)](https://www.devandweb.fr)
-
-
-
-
 
 
 ## English Documentation:
@@ -31,10 +25,6 @@ This package is example in PHP 8.1 of MVC (Model-View-Controller) Design Pattern
 There are other examples of design patterns here:
 
 [Design Patterns](https://github.com/s-damian/design-patterns-php)
-
-
-
-
 
 
 ## Documentation Française :

@@ -26,7 +26,7 @@ Author of these examples:
 
 * [Factory](https://github.com/s-damian/design-patterns-php/tree/master/src/factory)
 
-* [MVC (Model-View-Controller)](https://github.com/s-damian/design-patterns-php/tree/master/src/mvc-pattern-php)
+* [MVC (Model-View-Controller)](https://github.com/s-damian/design-patterns-php/tree/master/src/mvc)
 
 * [Multiton](https://github.com/s-damian/design-patterns-php/tree/master/src/multiton)
 
