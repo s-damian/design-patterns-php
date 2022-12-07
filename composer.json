@@ -1,0 +1,21 @@
+{
+    "name": "s-damian/design-patterns-php",
+    "description": "Design Patterns - Examples with PHP 8",
+    "type": "library",
+    "keywords": ["php", "design-patterns"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephen Damian",
+            "email": "contact@damian-freelance.fr",
+            "homepage": "https://github.com/s-damian"
+        }
+    ],
+    "require": {
+        "php": " ^8.1"
+    },
+    "scripts": {
+        "fix-all": "./tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --config=tools/php-cs-fixer/.php-cs-fixer.dist.php",
+        "fix-all-dry": "./tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --config=tools/php-cs-fixer/.php-cs-fixer.dist.php -vv --dry-run --diff"
+    }
+}

@@ -18,7 +18,7 @@ class SendMail
         if ($this->mailer->send()) {
             return $this->mailer->confirmmationMessage();
         }
-        
+
         return $this->mailer->errorMessage();
     }
 }

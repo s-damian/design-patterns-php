@@ -4,5 +4,4 @@ namespace Message;
 
 interface ArticleInterface
 {
-    
 }

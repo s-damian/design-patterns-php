@@ -9,5 +9,4 @@ use Core\Model\BaseModel;
  */
 abstract class Model extends BaseModel
 {
-
 }

@@ -15,7 +15,6 @@ use Mailing\Adapters\SwiftMailerAdapter;
 use Mailing\MailersLibraries\PHPMailer;
 use Mailing\Adapters\PHPMailerAdapter;
 
-
 /**
  * Example with SwiftMailer.
  */

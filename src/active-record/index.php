@@ -8,7 +8,6 @@ require_once 'Models/Article.php';
 
 use Models\Article;
 
-
 /**
  * In this example, we add a new article.
  */

@@ -95,7 +95,7 @@ final class Router
             throw new Exception('Method "'.$method.'" not found in '.$class.'.');
         }
 
-        return call_user_func_array([new $controllerInstantiate, $method], []);
+        return call_user_func_array([new $controllerInstantiate(), $method], []);
     }
 
     /**

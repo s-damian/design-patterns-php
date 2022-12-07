@@ -15,6 +15,6 @@ class HomeController extends Controller
         return $this->view('specific-page/home', [
             'baliseTitle' => 'Homepage title',
             'metaDescription' => 'Homepage desciption',
-        ]);  
+        ]);
     }
 }

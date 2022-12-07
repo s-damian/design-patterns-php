@@ -99,7 +99,7 @@ class Router implements RouterInterface
             throw new ExceptionHandler('Method "'.$method.'" not found in '.$class.'.');
         }
 
-        return call_user_func_array([new $controllerInstantiate, $method], []);
+        return call_user_func_array([new $controllerInstantiate(), $method], []);
     }
 
     /**

@@ -14,7 +14,7 @@
         <p>Header content</p>
 	</header>
 
-	<?php echo $contentInLayout;  // VUE ?>
+	<?php echo $contentInLayout;  // VUE?>
 
 	<footer>
         <p>Footer content</p>

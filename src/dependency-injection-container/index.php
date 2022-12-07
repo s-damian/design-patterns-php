@@ -14,7 +14,6 @@ use Core\Container;
 use Mailing\SendMail;
 use Mailing\Mailers\SwiftMailer;
 
-
 /**
  * In this example, Mailers "\Mailing\Mailers\SwiftMailer" and "\Mailing\Mailers\PHPMailer" implement the
  * interface/contract  "\Mailing\Contracts\Mailier\FormatterInterface".
@@ -23,7 +22,7 @@ use Mailing\Mailers\SwiftMailer;
  * interface/contract  "\Mailing\Contracts\Mailier\FormatterInterface".
  *
  * And we can then send the message with the "sendMessage" method of the class "\Mailing\SendMail".
- * 
+ *
  * In this example, we see that we can replace the dependency injected into the constructor of "\Mailing\SendMail".
  */
 
@@ -46,4 +45,5 @@ $container->setFactory('send_mail', function ($container) {
 
 
 // return object Mailing\SendMail - Instance of "\Mailing\SendMail" which has "\Mailing\Mailers\SwiftMailer" as an injected dependency.
-echo '<pre>'; var_dump($container->get('send_mail'));
+echo '<pre>';
+var_dump($container->get('send_mail'));

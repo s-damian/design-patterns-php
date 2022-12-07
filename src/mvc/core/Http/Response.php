@@ -12,7 +12,7 @@ class Response
     /**
      * HTTP response codes.
      */
-    const STATUS_CODE = [
+    public const STATUS_CODE = [
         // Information 1xx
         100 => 'Continue',
         101 => 'Switching Protocols',
@@ -106,7 +106,7 @@ class Response
             header($content);
         }
     }
-    
+
     /**
      * Redirect.
      *
@@ -122,13 +122,13 @@ class Response
                 header('Location: '.$url, true, $httpResponseCode);
             } else {
                 new ExceptionHandler('Status code "'.$httpResponseCodeParam.'" not good.');
-                
+
                 header('Location: '.$url);
             }
         } else {
             header('Location: '.$url);
         }
-        
+
         exit();
     }
 }

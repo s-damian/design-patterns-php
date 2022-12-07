@@ -15,6 +15,6 @@ class ArticleController extends Controller
         return $this->view('article/index', [
             'baliseTitle' => 'Article listing title',
             'metaDescription' => 'Article listing description',
-        ]);  
+        ]);
     }
 }

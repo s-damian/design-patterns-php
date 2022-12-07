@@ -29,7 +29,7 @@ class File
         foreach ($this->observers as $key => $obs) {
             if ($obs === $observer) {
                 unset($this->observers[$key]);
-                
+
                 break;
             }
         }

@@ -15,7 +15,6 @@ use File\Observers\AudioObserver;
 use File\Observers\ImageObserver;
 use File\Observers\VideoObserver;
 
-
 // We instantiate the Observers.
 $audioObserver = new AudioObserver();
 $imageObserver = new ImageObserver();

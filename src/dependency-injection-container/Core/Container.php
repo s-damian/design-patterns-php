@@ -52,7 +52,9 @@ class Container
 
         // For if we always call the same instance.
         if (!isset($this->instances[$key])) {
-            if (!isset($this->registry[$key])) throw new Exception('Instance '.$key.' not exist.');
+            if (!isset($this->registry[$key])) {
+                throw new Exception('Instance '.$key.' not exist.');
+            }
 
             $this->instances[$key] = $this->registry[$key]($this);
         }

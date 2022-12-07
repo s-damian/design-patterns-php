@@ -4,7 +4,7 @@ namespace Mailing\Adapters;
 
 use Mailing\MailersLibraries\SwiftMailer;
 
-class SwiftMailerAdapter implements AdapterInterface 
+class SwiftMailerAdapter implements AdapterInterface
 {
     public function __construct(
         private SwiftMailer $mailing

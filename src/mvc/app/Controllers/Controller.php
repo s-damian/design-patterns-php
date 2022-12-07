@@ -9,5 +9,4 @@ use Core\Controller\BaseController;
  */
 abstract class Controller extends BaseController
 {
-
 }

@@ -17,6 +17,6 @@ class ErrorController extends Controller
         return $this->view('error/404', [
             'baliseTitle' => 'Error 404 title',
             'metaDescription' => 'Error 404 desciption',
-        ]);  
+        ]);
     }
 }

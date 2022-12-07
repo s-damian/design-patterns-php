@@ -36,8 +36,10 @@ abstract class BaseController
      * Return view.
      */
     final protected function view(string $view, array $data = []): never
-    {       
-        if ($data) extract($data);
+    {
+        if ($data) {
+            extract($data);
+        }
 
         ob_start();
         require base_path().'/app/views/'.$view.'.php';
