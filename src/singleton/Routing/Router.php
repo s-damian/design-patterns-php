@@ -25,8 +25,6 @@ final class Router
     private array $routes = [];
 
     /**
-     * Router constructor.
-     *
      * We put it in private so that we cannot instantiate the router other than with a singleton.
      */
     private function __construct()

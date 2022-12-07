@@ -6,18 +6,9 @@ use Mailing\MailersLibraries\SwiftMailer;
 
 class SwiftMailerAdapter implements AdapterInterface 
 {
-    /**
-     * @var MailingInterface
-     */
-    private SwiftMailer $mailing;
-
-    /**
-     * MailingInterface constructor.
-     *
-     * @param SwiftMailer
-     */
-    public function __construct(SwiftMailer $mailing)
-    {
+    public function __construct(
+        private SwiftMailer $mailing
+    ) {
         $this->mailing = $mailing;
     }
 

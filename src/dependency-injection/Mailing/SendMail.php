@@ -6,10 +6,9 @@ use Mailing\Contracts\Mailers\MailerInterface;
 
 class SendMail
 {
-    private MailerInterface $mailer;
-
-    public function __construct(MailerInterface $mailer)
-    {
+    public function __construct(
+        private MailerInterface $mailer
+    ) {
         $this->mailer = $mailer;
     }
 

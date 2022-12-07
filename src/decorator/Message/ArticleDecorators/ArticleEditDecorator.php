@@ -6,16 +6,9 @@ use Message\ArticleInterface;
 
 class ArticleEditDecorator implements ArticleInterface
 {
-    /**
-     * ArticleInterface
-     */
-    private ArticleInterface $article;
-
-    /**
-     * ArticleEditDecorator constructor.
-     */
-    public function __construct(ArticleInterface $article)
-    {
+    public function __construct(
+        private ArticleInterface $article
+    ) {
         $this->article = $article;
     }
 

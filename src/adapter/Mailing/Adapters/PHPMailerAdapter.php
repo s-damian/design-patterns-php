@@ -6,16 +6,9 @@ use Mailing\MailersLibraries\PHPMailer;
 
 class PHPMailerAdapter implements AdapterInterface
 {
-    /**
-     * @var MailingInterface
-     */
-    private PHPMailer $mailing;
-
-    /**
-     * PHPMailerAdapter constructor.
-     */
-    public function __construct(PHPMailer $mailing)
-    {
+    public function __construct(
+        private PHPMailer $mailing
+    ) {
         $this->mailing = $mailing;
     }
 

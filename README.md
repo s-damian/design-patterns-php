@@ -5,7 +5,7 @@ Here are some examples of design patterns in PHP 8.1.
 
 ## Auteur
 
-[![Freelance PHP](https://raw.githubusercontent.com/s-damian/medias/main/s-damian-logo.webp)](https://github.com/s-damian)
+[![PHP Developer](https://raw.githubusercontent.com/s-damian/medias/main/s-damian-logo-full-stack.webp)](https://github.com/s-damian)
 
 
 ## Design Patterns
