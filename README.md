@@ -1,6 +1,6 @@
-# Design Patterns - Examples with PHP 8.1
+# Design Patterns - Examples with PHP 8.2
 
-Here are some examples of design patterns in PHP 8.1.
+Here are some examples of design patterns in PHP 8
 
 
 ## Auteur
