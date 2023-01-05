@@ -25,7 +25,6 @@ use Mailing\Mailers\PHPMailer;
  * In this example, we see that we can replace the dependency injected into the constructor of "\Mailing\SendMail".
  */
 
-
 $swiftMailer = new SwiftMailer();
 
 $sendMail = new SendMail($swiftMailer);
@@ -33,11 +32,9 @@ $sendMail = new SendMail($swiftMailer);
 echo '<pre>';
 var_dump($sendMail->sendMessage());
 
-
 /**
  * So we can replace the injected dependency "\Mailing\Mailers\SwiftMailer" by "\Mailing\Mailers\PHPMailer".
  */
-
 
 $phpMailer = new PHPMailer();
 

@@ -28,7 +28,6 @@ if ($mailer->send()) {
     echo $mailer->getError().'<hr>';
 }
 
-
 /**
  * For example, if one day we want to use the PHPMailer library instead of SwiftMailer,
  * we will just have to change the adapter and pass it the instance of PHPMailer as a constructor parameter.
@@ -43,7 +42,6 @@ if ($mailer->send()) {
 } else {
     echo $mailer->getError().'<hr>';
 }
-
 
 /**
  * And if one day we want to use yet another library,

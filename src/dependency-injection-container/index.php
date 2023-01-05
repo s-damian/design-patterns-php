@@ -26,7 +26,6 @@ use Mailing\Mailers\SwiftMailer;
  * In this example, we see that we can replace the dependency injected into the constructor of "\Mailing\SendMail".
  */
 
-
 $container = new Container();
 
 // We give as value an instance of "\Mailing\Mailers\SwiftMailer" to the key swift_mailer.
@@ -42,7 +41,6 @@ $container->set('swift_mailer', function ($container) {
 $container->setFactory('send_mail', function ($container) {
     return new SendMail($container->get('swift_mailer'));
 });
-
 
 // return object Mailing\SendMail - Instance of "\Mailing\SendMail" which has "\Mailing\Mailers\SwiftMailer" as an injected dependency.
 echo '<pre>';

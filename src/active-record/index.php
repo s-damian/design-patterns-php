@@ -18,7 +18,6 @@ $article->content = 'Contenu Article 1';
 $article->slug = 'article-1';
 $article->save();
 
-
 /**
  * In this example, we modify an article (the one with id 12).
  */

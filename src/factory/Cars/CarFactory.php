@@ -20,6 +20,7 @@ class CarFactory
                 return new Renault();
             default:
                 throw new Exception('Model '.$model.' not exist.');
+
                 break;
         }
     }

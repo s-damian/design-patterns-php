@@ -94,7 +94,6 @@ class Response
         520 => 'Web server is returning an unknown error',
     ];
 
-
     /**
      * Specify the HTTP header for displaying a view.
      */

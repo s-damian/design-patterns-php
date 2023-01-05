@@ -85,13 +85,13 @@ final class Router
 
         $class = '\App\Controllers\\'.ucfirst($controller).'Controller';
 
-        if (!class_exists($class)) {
+        if (! class_exists($class)) {
             throw new Exception('Class "'.$class.'" not found.');
         }
 
         $controllerInstantiate = new $class();
 
-        if (!method_exists($controllerInstantiate, $method)) {
+        if (! method_exists($controllerInstantiate, $method)) {
             throw new Exception('Method "'.$method.'" not found in '.$class.'.');
         }
 

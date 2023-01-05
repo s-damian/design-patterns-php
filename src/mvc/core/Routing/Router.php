@@ -89,13 +89,13 @@ class Router implements RouterInterface
 
         $class = '\App\Controllers\\'.ucfirst($controller).'Controller';
 
-        if (!class_exists($class)) {
+        if (! class_exists($class)) {
             throw new ExceptionHandler('Class "'.$class.'" not found.');
         }
 
         $controllerInstantiate = new $class();
 
-        if (!method_exists($controllerInstantiate, $method)) {
+        if (! method_exists($controllerInstantiate, $method)) {
             throw new ExceptionHandler('Method "'.$method.'" not found in '.$class.'.');
         }
 
