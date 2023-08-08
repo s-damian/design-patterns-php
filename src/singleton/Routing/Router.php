@@ -10,11 +10,6 @@ use Exception;
 final class Router
 {
     /**
-     * @var Router
-     */
-    private static $instance;
-
-    /**
      * URI.
      */
     private string $uri = '';
@@ -23,6 +18,11 @@ final class Router
      * Routes.
      */
     private array $routes = [];
+
+    /**
+     * @var Router
+     */
+    private static $instance;
 
     /**
      * We put it in private so that we cannot instantiate the router other than with a singleton.

@@ -14,11 +14,6 @@ use Core\Exception\ExceptionHandler;
 class Router implements RouterInterface
 {
     /**
-     * @var Router
-     */
-    private static $instance;
-
-    /**
      * URI.
      */
     private string $uri = '';
@@ -27,6 +22,11 @@ class Router implements RouterInterface
      * Routes.
      */
     private array $routes = [];
+
+    /**
+     * @var Router
+     */
+    private static $instance;
 
     /**
      *  Router constructor.

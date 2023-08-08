@@ -8,11 +8,6 @@ namespace Facades;
 abstract class Facade
 {
     /**
-     * @return string
-     */
-    abstract protected static function getFacadeAccessor();
-
-    /**
      * @param string $method - Name of the method to call.
      * @param array $arguments - Parameters in the method.
      */
@@ -24,6 +19,11 @@ abstract class Facade
 
         return static::$instance->$method(...$arguments);
     }
+
+    /**
+     * @return string
+     */
+    abstract protected static function getFacadeAccessor();
 
     private static function getFacadeInstace(): object
     {

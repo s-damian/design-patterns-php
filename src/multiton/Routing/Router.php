@@ -10,11 +10,6 @@ use Exception;
 final class Router
 {
     /**
-     * @var array - The different instances of the Router.
-     */
-    private static array $instances = [];
-
-    /**
      * URI.
      */
     private string $uri = '';
@@ -23,6 +18,11 @@ final class Router
      * Routes.
      */
     private array $routes = [];
+
+    /**
+     * @var array - The different instances of the Router.
+     */
+    private static array $instances = [];
 
     /**
      * We put it in private so that we can't instantiate the router other than with a Multiton.
