@@ -1,4 +1,4 @@
-# Design Patterns - Examples with PHP 8.3
+# Design Patterns - Examples with PHP 8
 
 Here are some examples of design patterns in PHP 8
 
